@@ -9,6 +9,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import lombok.Data;
 
 @Data
@@ -22,5 +24,6 @@ public class Account implements IdEntity {
 	@Column
 	private LocalDateTime createdAt;
 	@ManyToOne
+	@JsonBackReference
 	private Person accountHolder;
 }
