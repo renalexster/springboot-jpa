@@ -14,3 +14,6 @@ This is a simple project using SpringBoot in a relational database.
 
 To run the project with docker-compose use `docker-compose up`
 
+## Swagger API doc
+
+To access the swagger API documentation go to URL: http://localhost:8080/swagger-ui.html
