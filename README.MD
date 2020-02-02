@@ -1,3 +1,4 @@
+
 # Sample project Springboot
 
 This is a simple project using SpringBoot in a relational database.
@@ -6,13 +7,13 @@ This is a simple project using SpringBoot in a relational database.
 
 * Spring Data
 * PostgreSQL
-* Lombok
+* [Lombok](https://projectlombok.org/) (install plugin for IDE compatibility)
 * Flyway
 * Swagger
 
 ## Running the project
 
-To run the project with docker-compose use `docker-compose up`
+To run the project with docker-compose use `docker-compose up`.  Docker compose will create the PostgreSQL database and backend.
 
 ## Swagger API doc
 
