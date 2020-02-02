@@ -34,16 +34,16 @@ public abstract class AbstractController<T extends IdEntity> {
 	@PutMapping(value = "/{id}")
 	public T update(@PathVariable Long id, @RequestBody T entity) {
 		T persistedEntity = repository.getOne(id);
-		
+
 		if (persistedEntity != null) {
 			BeanUtils.copyProperties(entity, persistedEntity);
-			
+
 			return repository.save(persistedEntity);
 		}
-		
+
 		return null;
 	}
-	
+
 	@DeleteMapping(value = "/{id}")
 	public void delete(@PathVariable Long id) {
 		boolean exists = repository.existsById(id);
