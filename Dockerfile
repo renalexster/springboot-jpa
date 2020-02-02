@@ -1,5 +1,5 @@
 FROM maven:alpine
-MAINTAINER renato.campelo@ati.pe.gov.br
+MAINTAINER renalexster@gmail.com
 
 RUN mkdir /opt/app-backend \
 && mkdir /opt/app-backend/.m2 \
