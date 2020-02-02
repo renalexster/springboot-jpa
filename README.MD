@@ -10,5 +10,7 @@ This is a simple project using SpringBoot in a relational database.
 * Flyway
 * Swagger
 
+## Running the project
 
+To run the project with docker-compose use `docker-compose up`
 
