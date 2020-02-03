@@ -13,11 +13,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import com.example.demo.model.IdEntity;
 import com.example.demo.repository.AbstractRepository;
 
-public abstract class AbstractController<T extends IdEntity> {
+public abstract class AbstractController<T extends IdEntity, K extends AbstractRepository<T>> {
 
-	protected AbstractRepository<T> repository;
+	protected K repository;
 	
-	public AbstractController(AbstractRepository<T> repository) {
+	public AbstractController(K repository) {
 		this.repository = repository;
 	}
 	

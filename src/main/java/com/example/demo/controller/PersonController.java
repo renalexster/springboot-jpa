@@ -8,7 +8,7 @@ import com.example.demo.repository.PersonRepository;
 
 @RestController
 @RequestMapping("person")
-public class PersonController extends AbstractController<Person> {
+public class PersonController extends AbstractController<Person, PersonRepository> {
 
 
 	public PersonController(PersonRepository repository) {
