@@ -12,6 +12,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
@@ -38,7 +39,8 @@ public class Statement implements IdEntity {
 	private TypeStatement type;
 	@Column
 	private LocalDateTime dateTime;
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne
+	@JsonBackReference
 	private Account account;
 	
 	public enum TypeStatement {
