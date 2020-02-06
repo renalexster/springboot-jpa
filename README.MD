@@ -1,5 +1,5 @@
 
-# Sample project Springboot
+# Simple project Springboot
 
 This is a simple project using SpringBoot in a relational database.
 
